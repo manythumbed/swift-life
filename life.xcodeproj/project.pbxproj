@@ -10,6 +10,9 @@
 		22DE53C11BC019BB00F4B3A5 /* life.h in Headers */ = {isa = PBXBuildFile; fileRef = 22DE53C01BC019BB00F4B3A5 /* life.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22DE53C81BC019BB00F4B3A5 /* life.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DE53BD1BC019BB00F4B3A5 /* life.framework */; settings = {ASSET_TAGS = (); }; };
 		22DE53CD1BC019BB00F4B3A5 /* lifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DE53CC1BC019BB00F4B3A5 /* lifeTests.swift */; };
+		22DE53D81BC01FB700F4B3A5 /* life.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DE53D71BC01FB700F4B3A5 /* life.swift */; settings = {ASSET_TAGS = (); }; };
+		22DE53DA1BC0347500F4B3A5 /* lifeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DE53D91BC0347500F4B3A5 /* lifeSpec.swift */; settings = {ASSET_TAGS = (); }; };
+		BE6CCB627F7165DB244DF5C5 /* Pods_lifeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5F0F0C75A80FF475911E8DB /* Pods_lifeTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,11 @@
 		22DE53C71BC019BB00F4B3A5 /* lifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22DE53CC1BC019BB00F4B3A5 /* lifeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lifeTests.swift; sourceTree = "<group>"; };
 		22DE53CE1BC019BB00F4B3A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22DE53D71BC01FB700F4B3A5 /* life.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = life.swift; sourceTree = "<group>"; };
+		22DE53D91BC0347500F4B3A5 /* lifeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lifeSpec.swift; sourceTree = "<group>"; };
+		87653B4836CB6CD04BB15799 /* Pods-lifeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lifeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-lifeTests/Pods-lifeTests.release.xcconfig"; sourceTree = "<group>"; };
+		A431E839C8307356BF3929A7 /* Pods-lifeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lifeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lifeTests/Pods-lifeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A5F0F0C75A80FF475911E8DB /* Pods_lifeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lifeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +52,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22DE53C81BC019BB00F4B3A5 /* life.framework in Frameworks */,
+				BE6CCB627F7165DB244DF5C5 /* Pods_lifeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +65,8 @@
 				22DE53BF1BC019BB00F4B3A5 /* life */,
 				22DE53CB1BC019BB00F4B3A5 /* lifeTests */,
 				22DE53BE1BC019BB00F4B3A5 /* Products */,
+				F29472B0DD3425628095C19E /* Pods */,
+				84333EA542A9AD67EFB47164 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +84,7 @@
 			children = (
 				22DE53C01BC019BB00F4B3A5 /* life.h */,
 				22DE53C21BC019BB00F4B3A5 /* Info.plist */,
+				22DE53D71BC01FB700F4B3A5 /* life.swift */,
 			);
 			path = life;
 			sourceTree = "<group>";
@@ -82,8 +94,26 @@
 			children = (
 				22DE53CC1BC019BB00F4B3A5 /* lifeTests.swift */,
 				22DE53CE1BC019BB00F4B3A5 /* Info.plist */,
+				22DE53D91BC0347500F4B3A5 /* lifeSpec.swift */,
 			);
 			path = lifeTests;
+			sourceTree = "<group>";
+		};
+		84333EA542A9AD67EFB47164 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5F0F0C75A80FF475911E8DB /* Pods_lifeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F29472B0DD3425628095C19E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A431E839C8307356BF3929A7 /* Pods-lifeTests.debug.xcconfig */,
+				87653B4836CB6CD04BB15799 /* Pods-lifeTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +152,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22DE53D41BC019BB00F4B3A5 /* Build configuration list for PBXNativeTarget "lifeTests" */;
 			buildPhases = (
+				393CC81D2B105BD31A159CAF /* Check Pods Manifest.lock */,
 				22DE53C31BC019BB00F4B3A5 /* Sources */,
 				22DE53C41BC019BB00F4B3A5 /* Frameworks */,
 				22DE53C51BC019BB00F4B3A5 /* Resources */,
+				31C4089689488A81C9732637 /* Embed Pods Frameworks */,
+				76D1D115E009F3D49978216E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -142,6 +175,7 @@
 		22DE53B41BC019BB00F4B3A5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Tim Clark";
 				TargetAttributes = {
@@ -188,11 +222,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		31C4089689488A81C9732637 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lifeTests/Pods-lifeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		393CC81D2B105BD31A159CAF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		76D1D115E009F3D49978216E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lifeTests/Pods-lifeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		22DE53B81BC019BB00F4B3A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22DE53D81BC01FB700F4B3A5 /* life.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22DE53DA1BC0347500F4B3A5 /* lifeSpec.swift in Sources */,
 				22DE53CD1BC019BB00F4B3A5 /* lifeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +386,7 @@
 		22DE53D21BC019BB00F4B3A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -314,12 +399,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.manythumbed.life;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		22DE53D31BC019BB00F4B3A5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -337,6 +424,7 @@
 		};
 		22DE53D51BC019BB00F4B3A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A431E839C8307356BF3929A7 /* Pods-lifeTests.debug.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = lifeTests/Info.plist;
@@ -348,6 +436,7 @@
 		};
 		22DE53D61BC019BB00F4B3A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87653B4836CB6CD04BB15799 /* Pods-lifeTests.release.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = lifeTests/Info.plist;
@@ -376,6 +465,7 @@
 				22DE53D31BC019BB00F4B3A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22DE53D41BC019BB00F4B3A5 /* Build configuration list for PBXNativeTarget "lifeTests" */ = {
 			isa = XCConfigurationList;
@@ -384,6 +474,7 @@
 				22DE53D61BC019BB00F4B3A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
